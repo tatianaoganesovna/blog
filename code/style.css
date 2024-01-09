@@ -1,0 +1,275 @@
+body {
+  background-image: url(assets/background.png);
+  background-attachment: fixed;
+  background-position: top center;
+  margin: 0;
+  font-family: 'Montserrat';
+}
+
+.background {
+  width: auto;
+  height: 1500px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+img.logo {
+  display: block;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 60px;
+}
+
+.head-title {
+  display: block;
+  height: 330px;
+  width: 800px;
+  background-image: url(assets/background-head-title.png);
+}
+
+.firstsection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 74px;
+}
+
+.user-photo {
+  height: 40px;
+  width: 40px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-left: 60px;
+  margin-top: 160px;
+}
+
+
+.namedate {
+  margin-left: 14px;
+  color: white;
+}
+
+.title-article {
+  width: 470px;
+  color: #FFFFFF;
+  height: 70px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 35px;
+  margin-left: 30px;
+}
+
+.username {
+  margin-bottom: 2px;
+}
+
+.date {
+  margin: 0px;
+}
+
+.article {
+  background-color: #FFFFFF;
+  margin: 0;
+  height: 180px;
+  width: 800px;
+}
+
+.text {
+  margin-top: 36px;
+  margin-left: 60px;
+  height: 70px;
+  width: 680px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.continuereading {
+  margin-left: 60px;
+  height: 30px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  margin-top: 20px;
+  top: 115px;
+}
+
+a {
+  color: #8D4FDB;
+  outline: none;
+  text-decoration: none;
+}
+
+.secondsection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0;
+}
+
+.thirdsection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0;
+}
+
+.fourthsection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0;
+}
+
+.end {
+  display: flex;
+  width: 800px;
+  height: 211px;
+  background: #F1F1F1;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wanttoreadmore {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  padding-top: 49px;
+  padding-bottom: 21px;
+}
+
+.backgroundurl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 182px;
+  height: 45px;
+  border-radius: 3px;
+  background-color: #8D4FDB;
+
+}
+
+.visitblog {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding-top: 8px;
+}
+
+.urlcolor {
+  color: #FFFFFF;
+}
+
+.menu-main {
+  list-style: none;
+  margin: 40px 0 5px;
+  padding: 25px 0 5px;
+  text-align: center;
+
+}
+
+.menu-main li {
+  display: inline-block;
+}
+
+.menu-main li:after {
+  content: "|";
+  color: #606060;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.menu-main li:last-child:after {
+  content: none;
+}
+
+.menu-main a {
+  text-decoration: none;
+  font-family: 'Montserrat';
+  font-style: normal;
+  line-height: 14px;
+  font-weight: 400;
+  letter-spacing: 1.3px;
+  position: relative;
+  padding-bottom: 14px;
+  margin: 0 34px 0 30px;
+  font-size: 11px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+}
+
+.menu-main a,
+.menu-main a:visited {
+  color: #FFFFFF;
+}
+
+.menu-main a.current,
+.menu-main a:hover {
+  color: #FFFFFF;
+}
+
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  ;
+  transition: .8s;
+}
+
+.menu-main a:hover:before,
+.menu-main .current:before {
+  left: 0;
+}
+
+.menu-main a:hover:after,
+.menu-main .current:after {
+  right: 0;
+}
+
+@media (max-width: 550px) {
+  .menu-main {
+    padding-top: 0;
+  }
+
+  .menu-main li {
+    display: block;
+  }
+
+  .menu-main li:after {
+    content: none;
+  }
+
+  .menu-main a {
+    padding: 25px 0 20px;
+    margin: 0 30px;
+  }
+}
